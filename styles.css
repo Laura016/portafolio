@@ -1,7 +1,26 @@
-.titulo {
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 5px solid red;
+}
 
-    color: red;
+.titulo {
+    outline: 5px solid green;
+}
+
+.imagen {
+
+    outline: 5px solid purple;
+
+
+}
+img {
+
+    max-width: 500px;
 
 }
 
-;
+.circle {
+    width: 100px;
+    height: 100px;
+}
