@@ -2,59 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="/script.js"></script>
 </head>
 
 <body>
-    
-      <div class="wrapper">
-        <header>
-          <nav class="navbar">
-          <div class="brand">
-        <h2>Porta<span>folio</span></h2>
+
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>Porta<span>folio</span></h2>
         </div>
-      <ul class="menu">
-        <li><a class="active" href="#"> Home </a></li>
-        <li><a href="#"> Herramientas </a></li>
-        <li><a href="#"> Projects </a></li>
-        <li><a href="#"> Contact </a></li>
-      </ul> 
-     </nav>
-  </header>
-  <main class="main">
-    <div class="info-content">
-      <h1>I'm <span>Laura</span>Muñeton</h1>
-      <p class="description">Este es mi perfil donde podras encontrar mis experiencias aprendiendo a programar, tambien podras ver las herramientas que utilizo y algunos de mis proyectos que he realizado</p>
-      <a download href="#">
-        <button class="download-cv"></button>Download CV</a>
-        
-    </div>
-    
+        <ul class="menu">
+          <li><a class="active" href="#"> Home </a></li>
+          <li><a href="#"> Herramientas </a></li>
+          <li><a href="#"> Projects </a></li>
+          <li><a href="#"> Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="info-content">
+        <h1>I'm <span>Laura</span>Muñeton</h1>
+        <p class="description">Este es mi perfil donde podras encontrar mis experiencias aprendiendo a programar,
+          tambien podras ver las herramientas que utilizo y algunos de mis proyectos que he realizado</p>
+        <a download href="#">
+          <button class="download-cv"></button>Download CV</a>
+
+      </div>
+
       <img class="profile" src="/img/My project.jpg" alt="#"> </img>
-    
-    
-  </main>
-  <div>
-    <img class="html" src="/img/html.jpeg" alt="#">
-    <p>Es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</p>
-  
-  </div>
-  <div>
-    <img class="css" src="/img/css.png" alt="#">
-    <p>El lenguaje CSS es un lenguaje que determina el estilo de los documentos HTML. Abarca opciones relativas a fuentes, colores, márgenes, líneas, altura, anchura, imágenes de fondo, entre otros.</p>
-  </div>
-  <div>
-    <div>
-    <img class="java" src="/img/javascript.png" alt="#">
-    <p>JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web.</p>
-  </div>
-  
 
 
-  
+    </main>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="html" src="/img/html.jpeg" alt="HTML">
+    <div class="text1">
+      Es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="css" src="/img/css.png" alt="CSS">
+    <div class="text2">
+      El lenguaje CSS es un lenguaje que determina el estilo de los documentos HTML. Abarca opciones relativas a
+        fuentes, colores, márgenes, líneas, altura, anchura, imágenes de fondo, entre otros.</div>
+    </div>
+    <div class="mySlides fade"> 
+      <div class="numbertext">3 / 3</div>
+      <img class="java" src="/img/javascript.png" alt="JavaScript">
+      <div class="text3">
+    avaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web.</div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+
+
 </body>
+
 </html>
