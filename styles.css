@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 24px;
-
 }
 
 .logo {
@@ -25,85 +24,119 @@ span {
 .menu {
     display: flex;
     align-items: center;
-
 }
 
-.menu li {
-    list-style: none;
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+menu: home, herramientas, projects, contact;
+
+.mobile-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 20px;
-
-}
-
-.menu .active {
-    color: violet;
-}
-
-.menu a:hover {
-    background-color: violet;
-    color: black;
-    transition: ease-in .4s;
-}
-
-.main {
-    margin: 0 auto;
-
-    align-items: center;
-    outline: 1px solid red;
-    max-width: 1000px;
-}
-
-.billboard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    outline: 5px solid orange;
-    margin: 0 auto;
-    padding: 0 24px
-}
-
-@media only screen and (max-width: 758px) {
-    .billboard {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
-
-.info-content {
-    outline: 1px solid purple;
-}
-
-.profile {
-    outline: 1px solid greenyellow;
-}
-
-h1 {
-    color: white;
-    font-size: 3em;
-}
-
-
-
-.description {
-    color: white;
-
-}
-
-.profile img {
-    max-width: 400px;
-    max-height: 300px;
-    border-radius: 80px;
-}
-
-.download-cv {
-    padding: 10px 20px;
-    background-color: violet;
-    border: none;
+.mobile-container {
+    background: #fff;
+    border: 20px solid #666;
+    border-bottom-width: 80px;
     border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(76, 40, 130, .70)
-}
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+    display: inline-block;
+    height: 520px;
+    margin: 0 30px;
+    position: relative;
+    width: 320px;
+
+
+
+    .content {
+        background: aliceblue;
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 20px;
+
+    }
+
+    .menu .active {
+        color: violet;
+    }
+
+    .menu a:hover {
+        background-color: violet;
+        color: black;
+        transition: ease-in .4s;
+    }
+
+    .main {
+        margin: 0 auto;
+
+        align-items: center;
+
+        max-width: 1000px;
+        outline: solid red;
+
+    }
+
+    .billboard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        outline: solid green;
+        margin: auto;
+        padding: 0px 24px;
+
+    }
+
+
+    .profile {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(1, 2fr);
+        outline: 10px solid orange;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .profile {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 2fr);
+
+        }
+    }
+
+
+    h1 {
+        color: white;
+        font-size: 3em;
+    }
+
+    .description {
+        color: white;
+        font-size: 20px;
+    }
+
+    .profile img {
+        padding: 10px 10px;
+        max-width: 400px;
+        max-height: 300px;
+        border-radius: 80px;
+        outline: solid purple;
+
+    }
+
+    .download-cv {
+        padding: 20px 20px;
+        background-color: violet;
+        border: none;
+        border-radius: 50px;
+        margin-top: 10px;
+        cursor: pointer;
+
+    }
