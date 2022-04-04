@@ -24,15 +24,11 @@ span {
 
 .menu {
     text-decoration: none;
-    display: block;
+    display: flex;
     align-items: center;
     outline: 1px solid red;
 }
 
-.checkbox{
-width: auto;
-height: auto;
-}
 .menu a {
     color: white;
     text-decoration: none;
@@ -59,16 +55,6 @@ height: auto;
     outline: solid red;
 
 }
-
-.billboard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    outline: solid green;
-    margin: auto;
-    padding: 0px 24px;
-
-}
-
 
 .profile {
     justify-content: center;
@@ -113,4 +99,5 @@ h1 {
     border-radius: 50px;
     margin-top: 10px;
     cursor: pointer;
+
 }

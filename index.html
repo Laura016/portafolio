@@ -7,9 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
   <link rel="stylesheet" href="styles.css">
-
-  <script src="/script.js"></script>
+  <link rel="stylesheet" href="responsive-nav.css">
+  <script src="responsive-nav.js"></script>
+  <script type= "/extensions.json"></script>
 </head>
+
+<script>
+  var nav = responsiveNav(".menu");
+</script>
 
 <body>
 
@@ -19,36 +24,23 @@
         <div class="logo">
           <h2>Porta<span>folio</span></h2>
         </div>
-
-        <div class="mobile-wrapper">
-          <div class="mobile-container">
-            <div class="content">
-              <nav>
-                <input type="checkbox" id="hamburger1" />
-                <label for="hamburger1"></label>
-                <button id="button-menu" class="button-menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-                <ul class="menu">
-                  <li><a class="active" href="#"> Home </a></li>
-                  <li><a href="#"> Herramientas </a></li>
-                  <li><a href="#"> Projects </a></li>
-                  <li><a href="#"> Contact </a></li>
-                </ul>
-            </div>
-          </div>
+        <div>
+          <nav>
+            <ul class="menu">
+              <li><a class="active" href="#"> Home </a></li>
+              <li><a href="#"> Herramientas </a></li>
+              <li><a href="#"> Projects </a></li>
+              <li><a href="#"> Contact </a></li>
+            </ul>
+          </nav>
         </div>
-
-      </nav>
 
     </header>
     <main class="main">
 
       <div class="profile">
         <div> <img src="/img/My project.jpg" alt="" /></div>
-        <div class="billboard">
+         
           <div class="info-content">
             <h1>I'm <span>Laura</span>Muñeton</h1>
             <p class="description">Este es mi perfil donde podras encontrar mis experiencias aprendiendo a programar,
