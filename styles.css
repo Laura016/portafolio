@@ -16,6 +16,7 @@
 
 .logo {
     color: white
+    
 }
 
 span {
@@ -23,6 +24,7 @@ span {
 }
 
 .menu {
+    font-family: 'helvetica neue', helvetica, sans-serif;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -72,6 +74,9 @@ span {
     }
 }
 
+.info-content {
+    margin-top: 80px;
+}
 
 h1 {
     color: white;
@@ -93,7 +98,7 @@ h1 {
 }
 
 .download-cv {
-    padding: 20px 20px;
+    padding: 20px 20px 20px;
     background-color: violet;
     border: none;
     border-radius: 50px;
